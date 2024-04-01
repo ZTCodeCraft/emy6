@@ -663,6 +663,10 @@ progress {
   }
 }
 
+.line-lang {
+  padding-top: var(--ar-nav-link-padding-y);
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 600;
