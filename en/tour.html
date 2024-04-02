@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Around | Business Consulting</title>
+    <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
+    <meta name="keywords" content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="../assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="../assets/js/theme-switcher.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/aos/dist/aos.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../assets/icons/around-icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body class="bg-secondary">
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand pe-sm-3" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <svg width="35" height="32" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
+              </svg>
+            </span>
+            Around
+          </a>
+
+          <!-- Theme switcher -->
+          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+            <input class="form-check-input" type="checkbox" id="theme-mode">
+            <label class="form-check-label" for="theme-mode">
+              <i class="ai-sun fs-lg"></i>
+            </label>
+            <label class="form-check-label" for="theme-mode">
+              <i class="ai-moon fs-lg"></i>
+            </label>
+          </div>
+
+          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
+            <i class="ai-cart fs-xl me-2 ms-n1"></i>
+            Buy now
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll navbar-nav-main me-auto" style="--ar-scroll-height: 520px;">
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="../index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="services.html">Tour Programs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="services-2.html">Tour Programs v.2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="#">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="/bg/index.html">BG</a></li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">EN</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- Hero -->
+      <section class="overflow-hidden">
+        <div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Program</li>
+            </ol>
+          </nav>
+  
+          <!-- Page title -->
+          <h1 class="display-2 text-center">Tour Program 1</h1>
+          <p class="fs-lg mb-2 mb-sm-3 text-center">Catchy sentence here about this tour</p>
+        </div>
+      </section>
+
+
+
+
+      <!-- CEO quote + Process steps -->
+      <section class="overflow-hidden">
+        <div class="container pb-5 pt-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
+          <div class="row pb-md-3 pb-lg-4 mb-2 mb-lg-3">
+
+            <!-- CEO quote -->
+            <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+              <div class="position-relative" style="max-width: 416px;">
+                <img class="d-block position-relative z-2" src="../assets/img/landing/business-consulting/ceo.png" alt="Nicolas Black">
+                <div class="bg-primary position-absolute start-0 bottom-0 w-100" style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem;"></div>
+              </div>
+              <div class="text-center text-md-start pt-3 mt-3">
+                <h2 class="mb-2">8 Дни в Гърция</h2>
+                <p class="fs-xl text-body-secondary mb-2">Tour Name</p>
+                <div class="position-relative pt-4 pb-4" style="max-width: 500px;">
+                  <div class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1">
+                    <svg class="text-border" width="155" height="111" viewBox="0 0 155 111" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"></path>
+                      <path d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"></path>
+                    </svg>
+                  </div>
+                  <p class="fs-xl position-relative z-2 mb-0">
+                    Всеки ден плаваме до различен остров и залив като ще посетим <strong>островите Егина, Идра, Дакос, Спецес и Порос, Агролическия залив и залива Мандраки, градовете Ермиони и Нафплион</strong> и редица знайни и незнайни гръцки селца. 
+                  </p>
+                </div>
+                <div class="position-relative pt-4 pb-4" style="max-width: 500px;">
+                    <p class="fs-xl position-relative z-2 mb-0">
+                        Посоката е юг – югозапад от Атина. Пътешествието е кръгово. Маршрутът на пътешествието не бяга навътре в морето, а следва чудатите извивки на континента и криволичи между „протягащите се“ полуострови и разпръснати острови. И всеки е различен, и всеки със своите забележителности.
+                    </p>
+                </div>
+                <div class="position-relative pt-4" style="max-width: 500px;">
+                    <p class="fs-xl position-relative z-2 mb-0">
+                        Саронически залив и Арголически залив са два залива на юг от гръцката столица – Атина.
+                        Първият отделя областта Атика (на континета) от п-в Пелопонес, а другият е един от най-дълбоките заливи на едноименния п-в Пелопонес. Погрешно се смята, че близостта до столицата намалява атрактивността на този район на Гърция. Точно напротив: изключителната крайморска природа влиза във взаимодействие с исторически паметници и археологически забележителности, свързани с историята на едновремешния град – държава и Древна Гърция.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 1</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Алимо марина</h3>
+                      <p class="card-text">Алимо марина ( гр. Атина) – гр. Егина (о. Егина) – 18 м.м.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="250">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 2</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">гр. Егина – гр. Ермиони </h3>
+                      <p class="card-text">гр. Егина (о.Егина) – гр. Ермиони (п-в Пелопонес) – 34 м.м. Сутрешно плуване: залив Цуцура (о. Порос)
+                        Следобедно плуване: залив до о. Спати
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="400">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 3</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Business plan creation</h3>
+                      <p class="card-text">A sagittis morbi massa venenatis, egestas viverra ac elit nibh tellus nisi in nec tellus mauris feugiat gravida.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="450">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 4</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Strategy implementation</h3>
+                      <p class="card-text">Elementum purus, nisl ipsum sit. Amet sit praesent proin sit cras. Leo sed praesent nunc  vel nec risus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="700">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 5</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Strategy implementation</h3>
+                      <p class="card-text">Elementum purus, nisl ipsum sit. Amet sit praesent proin sit cras. Leo sed praesent nunc  vel nec risus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="550">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 6</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Strategy implementation</h3>
+                      <p class="card-text">Elementum purus, nisl ipsum sit. Amet sit praesent proin sit cras. Leo sed praesent nunc  vel nec risus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="600">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 7</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Strategy implementation</h3>
+                      <p class="card-text">Elementum purus, nisl ipsum sit. Amet sit praesent proin sit cras. Leo sed praesent nunc  vel nec risus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="650">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">ден 8</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Strategy implementation</h3>
+                      <p class="card-text">Elementum purus, nisl ipsum sit. Amet sit praesent proin sit cras. Leo sed praesent nunc  vel nec risus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer pt-lg-5 pt-4 pb-5">
+      <div class="container pt-3 mt-md-2 mt-lg-3">
+        <div class="row gy-md-5 gy-4 mb-md-5 mb-4 pb-lg-2">
+          <div class="col-lg-3">
+            <a class="navbar-brand d-inline-flex align-items-center mb-lg-4 mb-3" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <svg version="1.1" width="35" height="32" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
+                </svg>
+              </span>
+              <span class="text-nav">Around</span>
+            </a>
+            <p class="mb-4 pb-lg-1 fs-xs text-body-secondary" style="max-width: 306px;">The agency with extensive experience that creates marketing strategies for B2B and B2C companies.</p>
+            <div class="d-flex mt-n3 ms-n3">
+              <a class="btn btn-secondary btn-icon btn-sm btn-facebook rounded-circle mt-3 ms-3" href="#" aria-label="Facebook">
+                <i class="ai-facebook"></i>
+              </a>
+              <a class="btn btn-secondary btn-icon btn-sm btn-instagram rounded-circle mt-3 ms-3" href="#" aria-label="Instagram">
+                <i class="ai-instagram"></i>
+              </a>
+              <a class="btn btn-secondary btn-icon btn-sm btn-linkedin rounded-circle mt-3 ms-3" href="#" aria-label="LinkedIn">
+                <i class="ai-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-8 offset-xl-1 col-lg-9">
+            <div class="row row-cols-sm-4 row-cols-1">
+              <div class="col">
+                <ul class="nav flex-column mb-0">
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Services</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Industries</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Clients</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Reviews</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Case studies</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="nav flex-column mb-0">
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Contacts</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Help center</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="nav flex-column mb-0">
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">About</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Careers</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">News &amp; insights</a></li>
+                  <li class="nav-item mb-2"><a class="nav-link p-0" href="#">Industry forecasts</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="nav flex-column mb-0">
+                  <li class="nav-item mb-2">
+                    <a class="nav-link p-0" href="mailto:+15262200444">+&nbsp;1&nbsp;526&nbsp;220&nbsp;0444</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link p-0" href="mailto:+15262200444">+&nbsp;1&nbsp;526&nbsp;220&nbsp;0000</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="text-primary fw-semibold p-0" href="#">example@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav fs-sm text-body-secondary">&copy; All rights reserved. Made by <a class="nav-link fw-normal p-0 ms-1" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="../assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/aos/dist/aos.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+</html>
