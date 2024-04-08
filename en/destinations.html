@@ -218,7 +218,7 @@
 
 
       <!-- Destinations slider -->
-      <section class="mt-lg-1 mt-xl-2 mt-xxl-2">
+      <section class="mt-lg-1 mt-xl-2 mt-xxl-2 pb-5">
         <div class="container pt-2 pt-sm-4 pt-lg-5 mt-md-3 mt-lg-0">
           <div class="row pb-3 mb-3 mb-lg-4">
             <div class="col-lg-11 d-sm-flex justify-content-between text-center text-sm-start">
@@ -344,8 +344,28 @@
         </div>
       </section>
 
-      <section class="mt-lg-3 mt-xl-4 mt-xxl-5">
-        <div style="-webkit-overflow-scrolling: touch; overflow-y: auto; line-height: 0px;"><iframe style="overflow: hidden; width: 100%; height: 600px;" allow="geolocation *; camera *;" frameborder="0" src="https://www.mapotic.com/emy6/embed?zoom=5.903663474659014&lat=38.76037767394315&lng=22.15187236524298&fcat=39776"></iframe></div>
+      <!-- Map-->
+      <section class="position-relative ">
+        <div class="d-none d-xl-block" style="height: 570px;"></div>
+        <div class="d-none d-lg-block d-xl-none" style="height: 450px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 380px;"></div>
+        <div class="d-md-none" style="height:280px;"></div>
+        <div class="interactive-map position-absolute top-0 start-0 w-100 h-100" data-map-options='{
+          "center": [38.911325, 21.964667],
+          "zoom": 6,
+          "scrollWheelZoom": false,
+          "autoClose": false,
+          "markers": [
+            {
+              "position": [37.7904, 20.8986],
+              "popup": "<div class=&#39;p-3&#39;><h6>Zakynthos</h6><p class=&#39;fs-sm pt-1 mt-n3 mb-0&#39;>Greece</p></div>"
+            },
+            {
+              "position": [39.713245, 22.822009],
+              "popup": "<div class=&#39;p-3&#39;><h6>Agya</h6><p class=&#39;fs-sm pt-1 mt-n3 mb-0&#39;>Greece</p></div>"
+            }
+          ]
+        }'></div>
       </section>
 
       
