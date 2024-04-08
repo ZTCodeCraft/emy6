@@ -153,7 +153,60 @@
 
 
     <!-- Page wrapper -->
-    <main class="page-wrapper">
+    <main class="page-wrapper bg-secondary">
+
+      <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand pe-sm-3" href="../index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+                <img src="assets/img/logo.png" width="80" height="50">
+            </span>
+          </a>
+
+        
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <ul class="navbar-nav order-lg-3 d-none d-lg-inline-flex">
+            <li class="nav-item">
+              <a href="/bg/index.html" class="nav-link">BG</a>
+            </li>
+            <li class="nav-item separator line-lang d-sm-inline"> | </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">EN</a>
+            </li>
+          </ul>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll navbar-nav-main me-auto" style="--ar-scroll-height: 520px;">
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="en/destinations.html">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="en/amenities.html">Amenities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="en/tour.html">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="en/contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="en/availability.html">Availability</a>
+              </li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="/bg/index.html">BG</a></li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">EN</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     
       
 
@@ -178,56 +231,6 @@
             <div class="swiper-slide">
               <div class="swiper-slide-cover bg-position-top-center" style="background-image: url(assets/img/hero2.png);"></div>
 
-              <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-              <header class="navbar navbar-expand-lg" data-bs-theme="light">
-                <div class="container">
-
-                  <!-- Navbar brand (Logo) -->
-                  <a class="navbar-brand pe-sm-3" style="color: white" href="index.html">
-                    <span class="text-primary flex-shrink-0 me-2">
-                      <img src="assets/img/logo.png" width="80" height="50">
-                    </span>
-                  </a>
-
-                  <!-- Mobile menu toggler (Hamburger) -->
-                  <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                  <ul class="navbar-nav order-lg-3 d-none d-lg-inline-flex">
-                    <li class="nav-item">
-                      <a href="/bg/index.html" class="nav-link white">BG</a>
-                    </li>
-                    <li class="nav-item separator line-lang d-sm-inline"> | </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link white">EN</a>
-                    </li>
-                  </ul> 
-
-                  <!-- Navbar collapse (Main navigation) -->
-                  <nav class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav navbar-nav-scroll navbar-nav-main me-auto" style="--ar-scroll-height: 520px;">
-                      <li class="nav-item">
-                        <a class="nav-link white" style="font-weight: bold;" href="en/destinations.html">Destinations</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link white" style="font-weight: bold;" href="en/services.html">Amenities</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link white" style="font-weight: bold;" href="en/services.html">Prices</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link white" style="font-weight: bold;" href="en/contacts.html">Contacts</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link white" style="font-weight: bold;" href="en/availability.html">Availability</a>
-                      </li>
-                      <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link white" href="/bg/index.html">BG</a></li>
-                      <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link white" href="#">EN</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </header>
             </div>
           </div>
           <div class="swiper-pagination mb-4"></div>
