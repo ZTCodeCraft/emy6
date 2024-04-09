@@ -663,10 +663,6 @@ progress {
   }
 }
 
-.line-lang {
-  padding-top: var(--ar-nav-link-padding-y);
-}
-
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 600;
@@ -3038,8 +3034,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --ar-btn-color: #fff;
-  --ar-btn-bg: #157890;
-  --ar-btn-border-color: #157890;
+  --ar-btn-bg: #448c74;
+  --ar-btn-border-color: #448c74;
   --ar-btn-hover-color: #fff;
   --ar-btn-hover-bg: #3a7763;
   --ar-btn-hover-border-color: #36705d;
@@ -3049,8 +3045,8 @@ textarea.form-control-lg {
   --ar-btn-active-border-color: #336957;
   --ar-btn-active-shadow: unset;
   --ar-btn-disabled-color: #fff;
-  --ar-btn-disabled-bg: #157890;
-  --ar-btn-disabled-border-color: #157890;
+  --ar-btn-disabled-bg: #448c74;
+  --ar-btn-disabled-border-color: #448c74;
 }
 
 .btn-secondary {
@@ -3827,17 +3823,13 @@ textarea.form-control-lg {
   border: 0;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
-.white {
-  color: white !important;
-}
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: var(--ar-nav-link-hover-color)!important;
+  color: var(--ar-nav-link-hover-color);
 }
 .nav-link:focus-visible {
   outline: 0;
@@ -3943,7 +3935,6 @@ textarea.form-control-lg {
 
 .navbar {
   --ar-navbar-padding-x: 0;
-  --ar-navbar-padding-y: 0.75rem;
   --ar-navbar-color: var(--ar-gray-800);
   --ar-navbar-hover-color: var(--ar-primary);
   --ar-navbar-disabled-color: var(--ar-gray-600);
@@ -5771,7 +5762,7 @@ textarea.form-control-lg {
   z-index: var(--ar-tooltip-zindex);
   display: block;
   margin: var(--ar-tooltip-margin);
-  font-family: "EB Garamond", serif;
+  font-family: var(--ar-font-sans-serif);
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -15376,6 +15367,7 @@ hr.dropdown-divider {
 }
 
 .navbar {
+  --ar-navbar-stuck-bg: var(--ar-light);
   --ar-navbar-toggler-color: var(--ar-gray-800);
   --ar-navbar-collapse-bg: var(--ar-light);
   --ar-navbar-collapse-border-color: var(--ar-border-color);
@@ -17589,6 +17581,10 @@ img-comparison-slider:focus {
 
 .zoom-effect:hover .zoom-effect-img {
   transform: scale(1.05);
+}
+
+.line-lang {
+  padding-top: var(--ar-nav-link-padding-y);
 }
 
 .polygon-avatar {
