@@ -85,6 +85,7 @@
   --ar-gray-800: #434a57;
   --ar-gray-900: #121519;
   --ar-primary: #157890;
+  --ar-third: #0D4654;
   --ar-secondary: #edf1f5;
   --ar-success: #3fca90;
   --ar-info: #3f7fca;
@@ -3034,19 +3035,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --ar-btn-color: #fff;
-  --ar-btn-bg: #448c74;
-  --ar-btn-border-color: #448c74;
+  --ar-btn-bg: var(--ar-primary);
+  --ar-btn-border-color: var(--ar-primary);
   --ar-btn-hover-color: #fff;
-  --ar-btn-hover-bg: #3a7763;
-  --ar-btn-hover-border-color: #36705d;
+  --ar-btn-hover-bg: var(--ar-third);
+  --ar-btn-hover-border-color: var(--ar-third);
   --ar-btn-focus-shadow-rgb: 96, 157, 137;
   --ar-btn-active-color: #fff;
-  --ar-btn-active-bg: #36705d;
+  --ar-btn-active-bg: var(--ar-third);
   --ar-btn-active-border-color: #336957;
   --ar-btn-active-shadow: unset;
   --ar-btn-disabled-color: #fff;
-  --ar-btn-disabled-bg: #448c74;
-  --ar-btn-disabled-border-color: #448c74;
+  --ar-btn-disabled-bg: var(--ar-primary);
+  --ar-btn-disabled-border-color: var(--ar-primary);
 }
 
 .btn-secondary {
@@ -13939,10 +13940,10 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .btn-primary {
   --ar-btn-hover-color: #fff;
   --ar-btn-active-color: #fff;
-  --ar-btn-hover-bg: #157890;
-  --ar-btn-active-bg: #157890;
-  --ar-btn-hover-border-color: #157890;
-  --ar-btn-active-border-color: #157890;
+  --ar-btn-hover-bg: var(--ar-third);
+  --ar-btn-active-bg: var(--ar-primary);
+  --ar-btn-hover-border-color: var(--ar-third);
+  --ar-btn-active-border-color: var(--ar-primary);
   --ar-btn-disabled-color: #fff;
 }
 
