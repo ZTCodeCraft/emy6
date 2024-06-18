@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
     
     <!-- SEO meta tags -->
-    <title>Around | SaaS v.2</title>
+    <title>Emy 6</title>
     <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
     <meta name="keywords" content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative">
     <meta name="author" content="Createx Studio">
@@ -26,7 +26,8 @@
 
     <!-- Vendor styles -->
     <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" media="screen" href="../assets/vendor/aos/dist/aos.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/leaflet/dist/leaflet.css">
 
     <!-- Font icons -->
     <link rel="stylesheet" href="../assets/icons/around-icons.min.css">
@@ -152,21 +153,20 @@
 
 
     <!-- Page wrapper -->
-    <main class="page-wrapper">
-
+    <main class="page-wrapper bg-secondary">
+    
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-      <header class="navbar navbar-expand-lg fixed-top">
+      <header class="navbar navbar-expand-lg fixed-top" data-bs-theme="light">
         <div class="container">
 
           <!-- Navbar brand (Logo) -->
-          <a class="navbar-brand pe-sm-3" href="../index.html">
+          <a class="navbar-brand pe-sm-3" href="/bg/index.html">
             <span class="text-primary flex-shrink-0 me-2">
                 <img src="../assets/img/emy-logo.png" width="80" height="50">
             </span>
             Emy 6
           </a>
 
-        
 
           <!-- Mobile menu toggler (Hamburger) -->
           <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
@@ -176,11 +176,11 @@
           <!-- Navbar collapse (Main navigation) -->
           <ul class="navbar-nav order-lg-3 d-none d-lg-inline-flex">
             <li class="nav-item">
-              <a href="../bg/availability.html" class="nav-link">BG</a>
+              <a href="#" class="nav-link">BG</a>
             </li>
             <li class="nav-item separator line-lang d-sm-inline"> | </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">EN</a>
+              <a href="../en/amenities.html" class="nav-link">EN</a>
             </li>
           </ul>
 
@@ -191,7 +191,7 @@
                 <a class="nav-link" style="font-weight: bold;" href="destinations.html">Destinations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="font-weight: bold;" href="amenities.html">Amenities</a>
+                <a class="nav-link" style="font-weight: bold;" href="#">Amenities</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" style="font-weight: bold;" href="pricing.html">Prices</a>
@@ -202,50 +202,99 @@
               <li class="nav-item">
                 <a class="nav-link" style="font-weight: bold;" href="availability.html">Availability</a>
               </li>
-              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="/bg/index.html">BG</a></li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">BG</a></li>
               <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">EN</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-
-      <!-- Contact details -->
+      <!-- Hero -->
       <section class="bg-secondary py-5">
         <div class="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5">
-
           <!-- Breadcrumb -->
           <nav aria-label="breadcrumb">
             <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
               <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+              <li class="breadcrumb-item active" aria-current="page">Destinations</li>
             </ol>
           </nav>
   
           <!-- Page title -->
-          <h1 class="display-2 text-center">Availability</h1>
-          <p class="fs-lg pb-4 mb-2 mb-sm-3 text-center">See the available dates here. Contact us to book.</p>
-          
+          <h1 class="display-2 text-center">Удобства</h1>
+          <p class="fs-lg mb-2 mb-sm-3 text-center">Всичко, от което се нуждаете за перфектната почивка, е точно тук, от вълнуващо оборудване за водни спортове до луксозни удобства за комфорт.</p>
         </div>
       </section>
-      <section class="container pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5 mt-xxl-4 pb-lg-2 pb-xl-4 pb-xxl-5">
-        <iframe src="https://calendar.google.com/calendar/embed?src=48fb8e0c8f57efe4f915f8fd366e80c9dcce2dc30df78fde0c5db2429ca73f4a%40group.calendar.google.com&ctz=UTC" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </section>
-  
-    </main>
 
+      <section class="container mt-lg-2 mt-xl-2 mt-xxl-2">
+        <div class="row g-4 pt-2 pt-sm-3 pt-md-4 pt-xl-5 mt-sm-2 mt-md-3 mt-xl-0">
+          <div class="col-sm-6 col-lg-4">
+            <h4 class="display-5">Вашите възможности</h4>
+            <p class="fs-xl mb-0">Освободете своя приключенски дух с нашите първокласни удобства.</p>
+         
+            <ul class="mt-4 h5">
+                <li class="">
+                  <i class="text-primary fs-4 mt-n1 me-2"></i>
+                  Каяк за двама
+                </li>
+                <li class="">
+                  <i class="text-primary fs-4 mt-n1 me-2"></i>
+                  Падълборд
+                </li>
+                <li class="">
+                  <i class="text-primary fs-4 mt-n1 me-2"></i>
+                  Екипировка за риболов
+                </li>
+                <li class="">
+                  <i class="text-primary fs-4 mt-n1 me-2"></i>
+                  Екипировка за гмуркане
+                </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img class="rounded-5" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1715088848/emy6/amenities/1.png" alt="Image" style="max-width: 400px;" >
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img class="rounded-5" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1715088848/emy6/amenities/2.png" alt="Image" style="max-width: 400px;">
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img class="rounded-5" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1715088848/emy6/amenities/3.png" alt="Image" style="max-width: 400px;" >
+          </div>
+          <div class="col-sm-6 col-lg-4 d-flex align-items-center">
+            <p class="fs-xl text-center mb-0">Освен това, потопете се в лукс на нашата яхта, където кулинарните мечти се сбъдват. Нашата кухня разполага с печка, микровълнова фурна, кафемашина и хладилник за ваше удобство. Плюс това, на борда имаме пералня и съдомиялна машина за допълнително удобство по време на вашето пътешествие.</p>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img class="rounded-5" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1715088848/emy6/amenities/4.png" alt="Image" style="max-width: 400px;" >
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <img class="rounded-5" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1715088848/emy6/amenities/5.png" alt="Image" style="max-width: 400px;">
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-2 mb-lg-0">
+            <img class="rounded-5" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1715088848/emy6/amenities/6.png" alt="Image" style="max-width: 400px;">
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="text-center px-xl-3 px-xxl-5">
+              <h3 class="h2 mb-4">Извлечете максимума от своето приключение.</h3>
+              <a class="btn btn-dark rounded-pill" href="contacts.html">Свържи се</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
 
     <!-- Footer -->
     <footer class="footer bg-secondary py-5">
-      <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
-        <div class="border-bottom text-center pb-4">
-          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
-            <span class="text-primary flex-shrink-0 me-2">
-              <img src="../assets/img/emy-logo.png" width="80" height="50">
-            </span>
-            <span>Emy 6</span>
-          </a>
-          <ul class="nav justify-content-center py-1 pb-sm-2">
+        <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+          <div class="border-bottom text-center pb-4">
+            <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="../assets/img/emy-logo.png" width="80" height="50">
+              </span>
+              <span>Emy 6</span>
+            </a>
+            <ul class="nav justify-content-center py-1 pb-sm-2">
               <li class="nav-item">
                 <a class="nav-link py-2 px-3 mx-1" style="color: gray!important;" href="destinations.html">Destinations</a>
               </li>
@@ -262,16 +311,15 @@
                 <a class="nav-link py-2 px-3 mx-1" style="color: gray!important;" href="availability.html">Availability</a>
               </li>
             </ul>
+          </div>
+          <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+            <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
+              <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
+              <a class="nav-link fw-normal p-0 ms-1" href="https://ztcodecraft.com/" style="color: gray!important;" target="_blank" rel="noopener">ZT Code Craft</a>
+            </p>
+          </div>
         </div>
-        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
-          <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
-            <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
-            <a class="nav-link fw-normal p-0 ms-1" href="https://ztcodecraft.com/" style="color: gray!important;" target="_blank" rel="noopener">ZT Code Craft</a>
-          </p>
-        </div>
-      </div>
-    </footer>
-
+      </footer>
 
     <!-- Back to top button -->
     <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
@@ -283,9 +331,16 @@
 
 
     <!-- Vendor scripts: JS libraries and plugins -->
-    <script src="../assets/vendor/parallax-js/dist/parallax.min.js"></script>
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/vendor/aos/dist/aos.js"></script>
+    <script src="../assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="../assets/vendor/@fullcalendar/core/index.global.min.js"></script>
+    <script src="../assets/vendor/@fullcalendar/daygrid/index.global.min.js"></script>
+    <script src="../assets/vendor/@fullcalendar/list/index.global.min.js"></script>
+    <script src="../assets/vendor/@fullcalendar/timegrid/index.global.min.js"></script>
+    <script src="../assets/vendor/@fullcalendar/bootstrap5/index.global.min.js"></script>
+    <script src="../assets/vendor/leaflet/dist/leaflet.js"></script>
+
 
     <!-- Bootstrap + Theme scripts -->
     <script src="../assets/js/theme.min.js"></script>

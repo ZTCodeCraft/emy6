@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
     
     <!-- SEO meta tags -->
-    <title>Around | SaaS v.2</title>
+    <title>Around | Contacts v.1</title>
     <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
     <meta name="keywords" content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative">
     <meta name="author" content="Createx Studio">
@@ -23,10 +23,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
-
-    <!-- Vendor styles -->
-    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" media="screen" href="../assets/vendor/aos/dist/aos.css">
 
     <!-- Font icons -->
     <link rel="stylesheet" href="../assets/icons/around-icons.min.css">
@@ -135,6 +131,29 @@
         }
       })()
     </script>
+
+    <!-- Email Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-nav">
+          <div class="modal-header">
+            <h5 class="modal-title" id="subscriptionModalLabel">Emy 6</h5>
+        
+          </div>
+          <div class="modal-body text-center">
+            <!-- Your logo image -->
+
+            <!-- Confirmation message -->
+            <p class="mb-0">
+              Thank you for your email. We will contact you soon!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="closeModalButton">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </head>
 
 
@@ -152,14 +171,14 @@
 
 
     <!-- Page wrapper -->
-    <main class="page-wrapper">
+    <main class="page-wrapper bg-secondary">
 
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
       <header class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
           <!-- Navbar brand (Logo) -->
-          <a class="navbar-brand pe-sm-3" href="../index.html">
+          <a class="navbar-brand pe-sm-3" href="/bg/index.html">
             <span class="text-primary flex-shrink-0 me-2">
                 <img src="../assets/img/emy-logo.png" width="80" height="50">
             </span>
@@ -176,11 +195,11 @@
           <!-- Navbar collapse (Main navigation) -->
           <ul class="navbar-nav order-lg-3 d-none d-lg-inline-flex">
             <li class="nav-item">
-              <a href="../bg/availability.html" class="nav-link">BG</a>
+              <a href="/bg/index.html" class="nav-link">BG</a>
             </li>
             <li class="nav-item separator line-lang d-sm-inline"> | </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">EN</a>
+              <a href="../en/contacts.html" class="nav-link">EN</a>
             </li>
           </ul>
 
@@ -202,7 +221,7 @@
               <li class="nav-item">
                 <a class="nav-link" style="font-weight: bold;" href="availability.html">Availability</a>
               </li>
-              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="/bg/index.html">BG</a></li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">BG</a></li>
               <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">EN</a></li>
             </ul>
           </nav>
@@ -218,20 +237,109 @@
           <nav aria-label="breadcrumb">
             <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
               <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+              <li class="breadcrumb-item active" aria-current="page">Contacts</li>
             </ol>
           </nav>
-  
+
           <!-- Page title -->
-          <h1 class="display-2 text-center">Availability</h1>
-          <p class="fs-lg pb-4 mb-2 mb-sm-3 text-center">See the available dates here. Contact us to book.</p>
-          
+          <h1 class="display-2">Контакти</h1>
+
+          <p class="fs-lg pb-4 mb-2 mb-sm-3">Свържете се с нас, като попълните формуляра по-долу или ни се обадете сега.</p>
+
+          <!-- Details cards -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4 pb-2 pb-sm-4 pb-lg-5">
+
+            <!-- Address -->
+            <div class="col">
+              <div class="card border-0 h-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Адрес</h4>
+                  <p class="fs-lg fw-medium pb-3 mb-3">6, Monsignore Angelo Ronkali, 8231 Nesebar, Bulgaria</p>
+                  <a class="btn btn-sm btn-outline-primary" href="#">
+                    <i class="ai-map-pin me-1"></i>
+                    Get directions
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col">
+              <div class="card border-0 h-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Номер / WhatsApp</h4>
+                  <ul class="list-unstyled mb-0">
+                    <li class="pb-1 mb-2">
+                      <span class="d-block fs-sm text-body-secondary mb-1">Main office</span>
+                      <a class="nav-link fs-lg p-0" href="tel:+359877809900">+359&nbsp;(87)&nbsp;780&nbsp;9900&nbsp;</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col">
+              <div class="card border-0 h-100">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Емейл</h4>
+                  <ul class="list-unstyled mb-0">
+                    <li class="pb-1 mb-2">
+                      <span class="d-block fs-sm text-body-secondary mb-1">Main office</span>
+                      <a class="nav-link fs-lg p-0" href="mailto:bulyacht.gr@gmail.com">bulyacht.gr@gmail.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height: 250px;"></div>
+      </section>
+
+
+      <!-- Contact form -->
+      <section class="container" style="margin-top: -260px;" data-bs-theme="dark">
+        <div class="card border-0 bg-primary position-relative py-lg-4 py-xl-5">
+
+          <!-- Decorative shapes -->
+          <svg class="position-absolute end-0 mt-n2" width="242" height="331" viewBox="0 0 242 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M172.014 250.127C137.236 227.74 112.349 192.144 144.586 153.591C157.686 137.932 176.759 127.973 196.524 122.046C234.647 110.639 277.027 113.361 313.349 129.576C338.19 140.666 361.129 159.183 369.934 184.502C383.476 223.496 359.75 260.161 321.569 273.118C288.832 284.223 247.685 279.513 214.885 269.837C201.003 265.743 185.745 258.966 172.014 250.127Z" fill="#121519" fill-opacity=".07"></path>
+            <path d="M20.3265 69.264C19.7064 43.0736 29.8071 17.1878 62.3851 19.8622C75.6229 20.9505 87.9525 27.2066 98.3563 35.3132C118.426 50.9253 132.424 73.896 136.952 98.6413C140.044 115.562 138.424 134.218 127.978 148C111.901 169.236 83.4531 170.283 62.5246 155.209C44.5807 142.281 32.0983 119.217 25.3391 98.6799C22.4836 89.9885 20.5616 79.6021 20.3265 69.264Z" fill="#121519" fill-opacity=".07"></path>
+          </svg>
+          <svg class="position-absolute start-0 bottom-0 ms-3" width="169" height="217" viewBox="0 0 169 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M34.2574 90.0177C29.666 97.6253 26.6254 106.591 24.9502 114.96C19.9522 140.043 26.4112 168.792 49.6162 181.885C66.0705 191.17 91.0017 189.904 108.062 183.692C125.725 177.266 135.045 168.04 142.29 150.389C151.409 128.174 150.912 99.6904 125.93 91.6429C115.423 88.254 104.723 86.5065 94.2249 82.5889C84.6622 79.0248 74.8545 72.1766 64.4411 71.6149C50.8011 70.8777 40.9122 79.0146 34.2574 90.0177Z" fill="#121519" fill-opacity="0.07"></path>
+            <path d="M147.005 75.6331C152.135 70.7783 156.106 64.2374 159.153 57.9073C166.014 43.6372 174.127 22.1368 160.207 9.68505C152.924 3.17188 139.243 3.86644 130.324 5.29774C118.428 7.20428 107.295 8.85077 96.5031 14.783C85.8056 20.6599 79.0155 33.6997 77.0014 45.6686C75.4978 54.5776 79.63 63.6672 84.7391 70.7453C91.8208 80.5571 103.503 84.2003 114.817 84.3975C121.101 84.5081 127.716 84.0527 133.89 82.8121C138.932 81.7962 143.273 79.1597 147.005 75.6331Z" fill="#121519" fill-opacity="0.07"></path>
+          </svg>
+          <div class="card-body position-relative z-2 py-5">
+            <form class="mx-auto row g-4 needs-validation" style="max-width: 800px;" id="form">
+              <h2 class="h1 card-title text-center pb-4">Get in touch</h2>
+              <div class="col-sm-12">
+                <label class="form-label fs-base" for="name">Имена</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name" name="name">
+                <div class="invalid-feedback">Please enter your name!</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label fs-base" for="phone">Телефон</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Phone number" id="phone" name="phone">
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label fs-base" for="email">Имейл</label>
+                <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email" name="email">
+                <div class="invalid-feedback">Please provide a valid email address!</div>
+              </div>
+              <div class="col-sm-12">
+                <label class="form-label fs-base" for="message">Как бихме могли да съдействаме?</label>
+                <textarea class="form-control form-control-lg" rows="6" placeholder="Enter your message here..." required id="message" name="message"></textarea>
+                <div class="invalid-feedback">Please enter your message!</div>
+              </div>
+              <div class="col-sm-12 pt-4 text-center">
+                <button class="btn btn-lg btn-light" type="submit" id="button">Send a request</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
-      <section class="container pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5 mt-xxl-4 pb-lg-2 pb-xl-4 pb-xxl-5">
-        <iframe src="https://calendar.google.com/calendar/embed?src=48fb8e0c8f57efe4f915f8fd366e80c9dcce2dc30df78fde0c5db2429ca73f4a%40group.calendar.google.com&ctz=UTC" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </section>
-  
     </main>
 
 
@@ -239,7 +347,7 @@
     <footer class="footer bg-secondary py-5">
       <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
         <div class="border-bottom text-center pb-4">
-          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
+          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="bg/index.html">
             <span class="text-primary flex-shrink-0 me-2">
               <img src="../assets/img/emy-logo.png" width="80" height="50">
             </span>
@@ -282,12 +390,19 @@
     </a>
 
 
-    <!-- Vendor scripts: JS libraries and plugins -->
-    <script src="../assets/vendor/parallax-js/dist/parallax.min.js"></script>
-    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/vendor/aos/dist/aos.js"></script>
-
     <!-- Bootstrap + Theme scripts -->
     <script src="../assets/js/theme.min.js"></script>
+
+    <!-- EmailJS script-->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      emailjs.init('pvaDYTQzY1KMlccHm')
+    </script>
+    
+    <script src="../assets/js/email.js"></script>
+
   </body>
 </html>
